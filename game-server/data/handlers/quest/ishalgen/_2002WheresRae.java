@@ -52,6 +52,8 @@ public class _2002WheresRae extends AbstractQuestHandler {
 		int var = qs.getQuestVarById(0);
 		int targetId = env.getTargetId();
 		int dialogActionId = env.getDialogActionId();
+		PacketSendUtility.sendMessage(player, String.format("DEBUG: questId=%d; dialogActionId=%d; var=%d; targetId=%d; dialogActionId=%d", questId,
+			dialogActionId, var, targetId, dialogActionId));
 		if (qs.getStatus() == QuestStatus.START) {
 			switch (targetId) {
 				case 203519:

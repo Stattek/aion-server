@@ -152,7 +152,11 @@ public class QuestEngine implements GameEngine {
 	public boolean onDialog(QuestEnv env) {
 		try {
 			AbstractQuestHandler questHandler;
+			// this should happen each time that you talk to an NPC
+			PacketSendUtility.sendMessage(env.getPlayer(), String.format("DEBUG: onDialog"));
 			if (env.getQuestId() != 0) {
+				// DEBUG: checking when this branch happens
+				PacketSendUtility.sendMessage(env.getPlayer(), String.format("DEBUG: if (env.getQuestId() != 0); questId=%d", env.getQuestId()));
 				questHandler = getQuestHandlerByQuestId(env.getQuestId());
 				if (questHandler != null)
 					if (questHandler.onDialogEvent(env))
@@ -165,7 +169,10 @@ public class QuestEngine implements GameEngine {
 			} else {
 				Npc npc = (Npc) env.getVisibleObject();
 				for (int questId : getQuestNpc(npc == null ? 0 : npc.getNpcId()).getOnTalkEvent()) {
+					// DEBUG: checking each quest ID that is returned by NPCs
+					PacketSendUtility.sendMessage(env.getPlayer(), String.format("DEBUG: questId=%d; npcId=%d", questId, npc.getNpcId()));
 					questHandler = getQuestHandlerByQuestId(questId);
+					PacketSendUtility.sendMessage(env.getPlayer(), String.format("DEBUG: questHandler=%s", questHandler));
 					if (questHandler != null) {
 						env.setQuestId(questId);
 						if (questHandler.onDialogEvent(env))

@@ -665,6 +665,8 @@ public class PlayerController extends CreatureController<Player> {
 					|| !PositionUtil.isInRange(player, path.getEndX(), path.getEndY(), path.getEndZ(), MAX_FLIGHT_LANDING_DISTANCE)) {
 					AuditLogger.log(player, "tried to land from flight path #" + path.getId() + " " + PositionUtil.getDistance(player, path.getEndX(),
 						path.getEndY(), path.getEndZ()) + "m away from its end" + (player.getWorldId() == path.getEndWorldId() ? "" : " on another map"));
+					AuditLogger.log(player, String.format("tried to land at (%f,%f,%f) but game expected: (%f,%f,%f)", player.getX(), player.getY(),
+						player.getZ(), path.getEndX(), path.getEndY(), path.getEndZ()));
 					return;
 				}
 				// Stricter than retail, which doesn't check the flight time: a landing before the flight time is over is delayed until then, so a

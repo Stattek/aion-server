@@ -6,6 +6,7 @@ import com.aionemu.gameserver.model.gameobjects.player.Player;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_ATTACK_STATUS.LOG;
 import com.aionemu.gameserver.network.aion.serverpackets.SM_ATTACK_STATUS.TYPE;
 import com.aionemu.gameserver.utils.ThreadPoolManager;
+import com.aionemu.gameserver.utils.audit.AuditLogger;
 import com.aionemu.gameserver.world.World;
 
 /**
@@ -25,7 +26,10 @@ public class ZoneLevelService {
 		if (player.isDead())
 			return;
 
+		AuditLogger.log(player, String.format("player coords: (%f,%f,%f)", player.getX(), player.getY(), player.getZ()));
 		if (z < world.getWorldMap(player.getWorldId()).getDeathLevel()) {
+			AuditLogger.log(player, String.format("Triggered player death at (%f,%f,%f) for deathLevel %d", player.getX(), player.getY(), player.getZ(),
+				world.getWorldMap(player.getWorldId()).getDeathLevel()));
 			player.getController().die();
 			return;
 		}
