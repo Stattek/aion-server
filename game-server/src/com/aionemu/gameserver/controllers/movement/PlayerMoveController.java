@@ -154,10 +154,10 @@ public class PlayerMoveController extends PlayableMoveController<Player> {
 	}
 
 	/**
-	 * @return True if the player is below z 0 and more than 2 m under the ground.
+	 * @return True if the player is more than 2 m below z 0.
 	 */
-	private boolean isBelowWorld(float z) {
-		return z <= 0 && !Float.isNaN(GeoService.getInstance().getZ(owner, 5000, z + 2));
+	private static boolean isBelowWorld(float z) {
+		return z < -2;
 	}
 
 	private void dieFromFall() {
@@ -165,7 +165,7 @@ public class PlayerMoveController extends PlayableMoveController<Player> {
 		if (owner.isDead())
 			return;
 		if (owner.getController().die(TYPE.FALL_DAMAGE, LOG.REGULAR, owner))
-			PlayerReviveService.scheduleBindReviveAfterFall(owner);
+			PlayerReviveService.bindRevive(owner);
 	}
 
 	public void setHasMovedByRandomMoveLocEffect(Skill skill) {
