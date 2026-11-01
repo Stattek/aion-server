@@ -30,6 +30,7 @@ public class StarterKitService {
 		itemMap.put(20, new ArrayList<>());
 		itemMap.put(25, new ArrayList<>());
 		itemMap.put(35, new ArrayList<>());
+		itemMap.put(40, new ArrayList<>());
 		itemMap.put(50, new ArrayList<>());
 		itemMap.put(60, new ArrayList<>());
 
@@ -48,6 +49,7 @@ public class StarterKitService {
 		itemMap.get(35).add(new RewardItem(188054101, 1)); // Silver Coin Box
 		itemMap.get(35).add(new RewardItem(169620082, 1)); // Gathering Boost Charm II - 100%
 		itemMap.get(35).add(new RewardItem(169620094, 1)); // Crafting Boost Charm III - 100%
+		itemMap.get(40).add(new RewardItem(187050007, 1)); // Black Cloud Wing Feather
 		itemMap.get(50).add(new RewardItem(121000815, 1)); // Lonely Diamond Necklace
 		itemMap.get(50).add(new RewardItem(120000901, 1)); // Lonely Diamond Earrings
 		itemMap.get(50).add(new RewardItem(122001038, 1)); // Lonely Diamond Ring
