@@ -73348,55 +73348,55 @@
 		<bound_radius front="0.6" side="1.25" upper="2.13" />
 	</npc_template>
 	<npc_template npc_id="212773" level="30" name="torch spirit" name_id="306656" height="1.3" group_drop="ELEMENTALFIRE1" rank="DISCIPLINED" rating="NORMAL" race="ELEMENTAL" tribe="ELEMENTAL_FIRE" ai="aggressive" srange="7" sangle="240" arange="2" attack_speed="2310" hpgauge="3" floatcorpse="true">
-		<stats maxHp="28569">
+		<stats maxHp="4081">
 			<speeds walk="1" group_walk="1" run="7" run_fight="5.5" group_run_fight="7" />
 		</stats>
 		<bound_radius front="0.5" side="0.5" upper="2" />
 	</npc_template>
 	<npc_template npc_id="212774" level="30" name="corrupt blaze spirit" name_id="306657" height="1.904" group_drop="ELEMENTALFIRE2" rank="DISCIPLINED" rating="NORMAL" race="ELEMENTAL" tribe="ELEMENTAL_FIRE" ai="aggressive" srange="7" sangle="240" arange="2" attack_speed="2310" hpgauge="3" floatcorpse="true">
-		<stats maxHp="28569">
+		<stats maxHp="4081">
 			<speeds walk="1.5" group_walk="1.5" run="7.5" run_fight="5.5" group_run_fight="7.5" />
 		</stats>
 		<bound_radius front="0.56" side="0.56" upper="2.774" />
 	</npc_template>
 	<npc_template npc_id="212775" level="31" name="corrupt blaze spirit" name_id="306658" height="1.904" group_drop="ELEMENTALFIRE2" rank="DISCIPLINED" rating="NORMAL" race="ELEMENTAL" tribe="ELEMENTAL_FIRE" ai="aggressive" srange="7" sangle="240" arange="2" attack_speed="2310" hpgauge="3" floatcorpse="true">
-		<stats maxHp="30526">
+		<stats maxHp="4360">
 			<speeds walk="1.5" group_walk="1.5" run="7.5" run_fight="5.5" group_run_fight="7.5" />
 		</stats>
 		<bound_radius front="0.56" side="0.56" upper="2.774" />
 	</npc_template>
 	<npc_template npc_id="212776" level="30" name="nightmare obscura" name_id="306659" height="2.855" group_drop="SHADOWSTALKER" rank="DISCIPLINED" rating="NORMAL" race="MAGICALMONSTER" tribe="ELEMENTAL_FIRE" ai="aggressive" srange="7" sangle="240" arange="2" attack_speed="2610" hpgauge="3" floatcorpse="true">
-		<stats maxHp="21557">
+		<stats maxHp="3079">
 			<speeds walk="1.5" group_walk="1.5" run="7" run_fight="5.5" group_run_fight="7" />
 		</stats>
 		<bound_radius front="1.225" side="0.975" upper="2.855" />
 	</npc_template>
 	<npc_template npc_id="212777" level="31" name="corrupt fire spirit" name_id="306660" height="2.8620002" group_drop="ELEMENTALFIRE3" rank="DISCIPLINED" rating="NORMAL" race="ELEMENTAL" tribe="ELEMENTAL_FIRE" ai="aggressive" srange="7" sangle="240" arange="2" attack_speed="2310" hpgauge="3" floatcorpse="true">
-		<stats maxHp="30526">
+		<stats maxHp="4360">
 			<speeds walk="1.5" group_walk="1.5" run="8" run_fight="6" group_run_fight="8" />
 		</stats>
 		<bound_radius front="0.9" side="0.72" upper="3.562" />
 	</npc_template>
 	<npc_template npc_id="212778" level="32" name="corrupt fire spirit" name_id="306661" height="2.8620002" group_drop="ELEMENTALFIRE3" rank="DISCIPLINED" rating="NORMAL" race="ELEMENTAL" tribe="ELEMENTAL_FIRE" ai="aggressive" srange="7" sangle="240" arange="2" attack_speed="2310" hpgauge="3" floatcorpse="true">
-		<stats maxHp="32358">
+		<stats maxHp="4622">
 			<speeds walk="1.5" group_walk="1.5" run="8" run_fight="6" group_run_fight="8" />
 		</stats>
 		<bound_radius front="0.9" side="0.72" upper="3.562" />
 	</npc_template>
 	<npc_template npc_id="212779" level="31" name="protection kalgolem" name_id="306662" height="3" group_drop="SOULEDSTONE" rank="DISCIPLINED" rating="NORMAL" race="CONSTRUCT" tribe="ELEMENTAL_FIRE" ai="aggressive" srange="7" sangle="240" arange="2" attack_speed="2657" hpgauge="3">
-		<stats maxHp="23034">
+		<stats maxHp="3290">
 			<speeds walk="4.5" group_walk="4.5" run="7" run_fight="5.5" group_run_fight="7" />
 		</stats>
 		<bound_radius front="1.54" side="1.305" upper="3" />
 	</npc_template>
 	<npc_template npc_id="212780" level="33" name="corrupt flame spirit" name_id="306663" height="5.49" group_drop="ELEMENTALFIRE4" rank="DISCIPLINED" rating="NORMAL" race="ELEMENTAL" tribe="ELEMENTAL_FIRE" ai="aggressive" srange="7" sangle="240" arange="2" attack_speed="2310" hpgauge="3" floatcorpse="true">
-		<stats maxHp="32358">
+		<stats maxHp="4622">
 			<speeds walk="1.5" group_walk="1.5" run="8" run_fight="6" group_run_fight="8" />
 		</stats>
 		<bound_radius front="1.35" side="0.9" upper="5.99" />
 	</npc_template>
 	<npc_template npc_id="212781" level="32" name="destroyer obscura" name_id="306664" height="3.7115" group_drop="SHADOWSTALKER" rank="DISCIPLINED" rating="NORMAL" race="MAGICALMONSTER" tribe="ELEMENTAL_FIRE" ai="aggressive" srange="7" sangle="240" arange="2" attack_speed="2610" hpgauge="3" floatcorpse="true">
-		<stats maxHp="24415">
+		<stats maxHp="3487">
 			<speeds walk="1.5" group_walk="1.5" run="7" run_fight="5.5" group_run_fight="7" />
 		</stats>
 		<bound_radius front="1.5925" side="1.2675" upper="3.7115" />
@@ -74085,7 +74085,7 @@
 		<bound_radius front="2.835" side="5.73" upper="7.8" />
 	</npc_template>
 	<npc_template npc_id="212876" level="33" name="flame judge bolcan" name_id="306765" height="5.49" group_drop="ELEMENTALFIRE4" rank="EXPERT" rating="NORMAL" race="ELEMENTAL" tribe="ELEMENTAL_FIRE" ai="aggressive" srange="7" sangle="240" arange="2" attack_speed="2625" hpgauge="5" floatcorpse="true" cancel_level="80">
-		<stats maxHp="57376">
+		<stats maxHp="8196">
 			<speeds walk="1.5" group_walk="1.5" run="8" run_fight="6" group_run_fight="8" />
 		</stats>
 		<bound_radius front="1.35" side="0.9" upper="5.99" />
